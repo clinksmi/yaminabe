@@ -14,7 +14,7 @@ export default function CharacterDetailPage({ params }: CharacterDetailPageProps
   // character.id が params.id と同じキャラクターを見つけたら、それを 'character' 変数に入れるんだ。
   // ★c.id === parseInt(params.id) だったのを、c.id === params.id に変えたよ！
   //   IDが文字列（string）なので、数字に変換せず、文字列同士でそのまま比べるんだ。
-  const character = characters.find(c => c.id === params.id);
+const character = characters.find(c => c.id === params.id); // ← ここを変えるだけだよ！
 
   // もしキャラクターが見つからなかったら、ごめんねのメッセージを出すよ。
   if (!character) {
