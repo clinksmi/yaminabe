@@ -1,30 +1,25 @@
 // components/CharacterList.tsx
 
-import React from 'react';
-// dataフォルダにある全キャラクターのリスト（データ）を持ってくるよ
-import { characters } from '../data/characters'; 
-// さっき作ったCharacterCardのお部屋（コンポーネント）を持ってくるよ
-import CharacterCard from './CharacterCard'; 
+// まず、CharacterCard も Character型も使うからインポートしておくよ
+import CharacterCard from './CharacterCard';
+import { Character } from '@/data/characters'; // Character型も必要だよ！
 
-// CharacterListという「大きな棚」のお部屋を作るよ！
-const CharacterList = () => {
+// ここがとっても大事！
+// CharacterListコンポーネントが「characters」という名前で
+// Character型のリスト（配列）を受け取りますよ、という約束（型定義）をしているんだ。
+interface CharacterListProps {
+  characters: Character[]; // ここで「charactersっていう名前で、Characterのリストを受け取るよ」と宣言してる
+}
+
+// そして、実際にその約束通りに「characters」を受け取って使うよ、と書くんだ。
+export default function CharacterList({ characters }: CharacterListProps) {
   return (
-    // このdivが、キャラクターカードを並べる全体の枠だよ。Flexboxという並べ方の魔法を使うよ
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
-      {/*
-        characters.map() は、魔法の呪文だよ！
-        「characters（全キャラクターのリスト）のそれぞれのキャラクターについて、
-        CharacterCardのお部屋を作って、そこにそのキャラクターの情報を渡してね」
-        っていう意味なんだ。
-      */}
-      {characters.map((character) => (
-        // mapを使うときは、keyっていう特別な情報を書いてあげるのがお約束だよ。
-        // Reactが「これはどのキャラクターカードのお部屋か」を見分けるためだよ
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+      {characters.map(character => (
+        // キャラクターカードを並べるために、CharacterCardコンポーネントに
+        // key（リストの中でそれぞれを区別するためのID）と、キャラクター情報を渡すよ。
         <CharacterCard key={character.id} character={character} />
       ))}
     </div>
   );
-};
-
-// このお部屋を他のファイルで使えるようにするおまじないだよ
-export default CharacterList;
+}
