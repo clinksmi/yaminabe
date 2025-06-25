@@ -55,7 +55,119 @@ export const characters: Character[] = [
         "/images/lily_sad.png", // 悲しい顔
       ],
     },
-    relatedCharacters: ["kaito-002"], // 関連キャラクターのID（もしいたら）
+    relatedCharacters: ["002"], // 関連キャラクターのID（もしいたら）
+    notes: "実は、甘いものが大好きで、こっそり夜中に冷蔵庫を漁っていることがある。", // 豆知識
+  },
+   {
+    id: "002", // このキャラクターを区別する名前（半角英数字で、他の子と被らないように）
+    name: "aaaaaa",
+    gender: '女の子' ,
+    catchphrase: "自分は自分であり、それは変えようのない事実である。",
+    personality: "明るくて元気いっぱいだけど、少しドジなところもある優しい妖精。",
+    birthdate: "2003-11-30", // 例: 誕生日の日付
+    height: 173, // 例: 155 (cm)
+    weight: 60, // 例: 45 (kg)
+    favoriteThings: "同居人と過ごすこと",
+    苦手なもの: "雪、一人になること。",
+    特技: "勉強",
+    口癖: "特になし",
+    origin: "後ほど",
+    appearance: "「果てにて」", // 登場作品
+
+    images: {
+      fullBody: "/images/lily_fullbody.png", // 後で使う画像のファイル名（今は適当でOK）
+      faceExpressions: [
+        "/images/lily_smile.png", // 笑顔
+        "/images/lily_angry.png", // 怒った顔
+        "/images/lily_sad.png", // 悲しい顔
+      ],
+    },
+    relatedCharacters: [""], // 関連キャラクターのID（もしいたら）
+    notes: "実は、甘いものが大好きで、こっそり夜中に冷蔵庫を漁っていることがある。", // 豆知識
+  },
+
+   {
+    id: "003", // このキャラクターを区別する名前（半角英数字で、他の子と被らないように）
+    name: "dddddd",
+    gender: 'その他' ,
+    catchphrase: "自分は自分であり、それは変えようのない事実である。",
+    personality: "明るくて元気いっぱいだけど、少しドジなところもある優しい妖精。",
+    birthdate: "2003-11-30", // 例: 誕生日の日付
+    height: 173, // 例: 155 (cm)
+    weight: 60, // 例: 45 (kg)
+    favoriteThings: "同居人と過ごすこと",
+    苦手なもの: "雪、一人になること。",
+    特技: "勉強",
+    口癖: "特になし",
+    origin: "後ほど",
+    appearance: "「果てにて」", // 登場作品
+
+    images: {
+      fullBody: "/images/lily_fullbody.png", // 後で使う画像のファイル名（今は適当でOK）
+      faceExpressions: [
+        "/images/lily_smile.png", // 笑顔
+        "/images/lily_angry.png", // 怒った顔
+        "/images/lily_sad.png", // 悲しい顔
+      ],
+    },
+    relatedCharacters: [""], // 関連キャラクターのID（もしいたら）
+    notes: "実は、甘いものが大好きで、こっそり夜中に冷蔵庫を漁っていることがある。", // 豆知識
+  },
+
+   {
+    id: "004", // このキャラクターを区別する名前（半角英数字で、他の子と被らないように）
+    name: "母hは",
+    gender: '男の子' ,
+    catchphrase: "自分は自分であり、それは変えようのない事実である。",
+    personality: "明るくて元気いっぱいだけど、少しドジなところもある優しい妖精。",
+    birthdate: "2003-11-30", // 例: 誕生日の日付
+    height: 173, // 例: 155 (cm)
+    weight: 60, // 例: 45 (kg)
+    favoriteThings: "同居人と過ごすこと",
+    苦手なもの: "雪、一人になること。",
+    特技: "勉強",
+    口癖: "特になし",
+    origin: "後ほど",
+    appearance: "「果てにて」", // 登場作品
+
+    images: {
+      fullBody: "/images/lily_fullbody.png", // 後で使う画像のファイル名（今は適当でOK）
+      faceExpressions: [
+        "/images/lily_smile.png", // 笑顔
+        "/images/lily_angry.png", // 怒った顔
+        "/images/lily_sad.png", // 悲しい顔
+      ],
+    },
+    relatedCharacters: [""], // 関連キャラクターのID（もしいたら）
+    notes: "実は、甘いものが大好きで、こっそり夜中に冷蔵庫を漁っていることがある。", // 豆知識
+  },
+
+   {
+    id: "005", // このキャラクターを区別する名前（半角英数字で、他の子と被らないように）
+    name: "四宮",
+    gender: '男の子' ,
+    catchphrase: "自分は自分であり、それは変えようのない事実である。",
+    personality: "明るくて元気いっぱいだけど、少しドジなところもある優しい妖精。",
+    birthdate: "2003-11-30", // 例: 誕生日の日付
+    height: 173, // 例: 155 (cm)
+    weight: 60, // 例: 45 (kg)
+    favoriteThings: "同居人と過ごすこと",
+    苦手なもの: "雪、一人になること。",
+    特技: "勉強",
+    口癖: "特になし",
+    origin: "後ほど",
+    appearance: "「果てにて」", // 登場作品
+
+    images: {
+      fullBody: "/images/lily_fullbody.png", // 後で使う画像のファイル名（今は適当でOK）
+      faceExpressions: [
+        "/images/lily_smile.png", // 笑顔
+        "/images/lily_angry.png", // 怒った顔
+        "/images/lily_sad.png", // 悲しい顔
+      ],
+    },
+    relatedCharacters: [""], // 関連キャラクターのID（もしいたら）
     notes: "実は、甘いものが大好きで、こっそり夜中に冷蔵庫を漁っていることがある。", // 豆知識
   }
+  
 ];
